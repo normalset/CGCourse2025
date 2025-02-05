@@ -1,5 +1,7 @@
-build/.vs/build/FileContentIndex/1bfe0856-ab6f-4867-bfee-e51087096fe6.vsidx
 *.vsidx
-/build
 /3rdparty
 /.vscode
+/build/.vs
+/build/*/x64
+/build/x64
+*.user
