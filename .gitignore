@@ -1,5 +1,8 @@
 *.vsidx
-/3rdparty
+/3rdparty/*
+!/3rdparty/glm
+!/3rdparty/glm/include
+!/3rdparty/glm/include/glm
 /.vscode
 /build/.vs
 /build/*/x64
@@ -7,3 +10,6 @@
 *.user
 src/code_00_raytracer/.vscode/c_cpp_properties.json
 *.json
+build/code_00_raytracer/rendering.ppm
+src/code_00_raytracer/main_bk.cpp
+src/code_02_my_first_triangle/Source.cpp
