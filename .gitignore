@@ -5,3 +5,5 @@
 /build/*/x64
 /build/x64
 *.user
+src/code_00_raytracer/.vscode/c_cpp_properties.json
+*.json
