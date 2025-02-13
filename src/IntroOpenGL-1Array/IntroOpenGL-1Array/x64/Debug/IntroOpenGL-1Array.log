@@ -1,0 +1,6 @@
+﻿  IntroOpenGL-1Array.cpp
+E:\uni\ComputerGrafica\IntroOpenGL-1Array\IntroOpenGL-1Array\IntroOpenGL-1Array.cpp(171,13): warning C4305: 'inizializzazione': troncamento da 'double' a 'float'
+E:\uni\ComputerGrafica\IntroOpenGL-1Array\IntroOpenGL-1Array\IntroOpenGL-1Array.cpp(182,32): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+E:\uni\ComputerGrafica\IntroOpenGL-1Array\IntroOpenGL-1Array\IntroOpenGL-1Array.cpp(182,27): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+E:\uni\ComputerGrafica\IntroOpenGL-1Array\IntroOpenGL-1Array\IntroOpenGL-1Array.cpp(182,22): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+  IntroOpenGL-1Array.vcxproj -> E:\uni\ComputerGrafica\IntroOpenGL-1Array\x64\Debug\IntroOpenGL-1Array.exe

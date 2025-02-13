@@ -1,0 +1,21 @@
+﻿  ConsoleApplication1.cpp
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(60,33): warning C4244: 'argomento': conversione da 'int' a '_Ty'. Possibile perdita di dati.
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(60,33): warning C4244:         with
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(60,33): warning C4244:         [
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(60,33): warning C4244:             _Ty=float
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(60,33): warning C4244:         ]
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,33): warning C4244: 'argomento': conversione da 'int' a '_Ty'. Possibile perdita di dati.
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,33): warning C4244:         with
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,33): warning C4244:         [
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,33): warning C4244:             _Ty=float
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,33): warning C4244:         ]
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,33): warning C4244: 'argomento': conversione da 'int' a '_Ty'. Possibile perdita di dati.
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,33): warning C4244:         with
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,33): warning C4244:         [
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,33): warning C4244:             _Ty=float
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62,33): warning C4244:         ]
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(203,32): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(203,27): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(203,22): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+E:\uni\ComputerGrafica\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(206,56): warning C4267: 'argomento': conversione da 'size_t' a 'GLsizei'. Possibile perdita di dati.
+  ConsoleApplication1.vcxproj -> E:\uni\ComputerGrafica\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
