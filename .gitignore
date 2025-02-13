@@ -1,4 +1,5 @@
 *.vsidx
+*.vs
 /3rdparty/*
 !/3rdparty/glm
 !/3rdparty/glm/include
