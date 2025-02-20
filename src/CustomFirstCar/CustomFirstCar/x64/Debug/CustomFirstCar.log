@@ -1,0 +1,11 @@
+﻿  CustomFirstCar.cpp
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(183,50): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(183,45): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(183,40): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(241,49): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(241,44): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(241,39): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(250,49): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(250,44): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+E:\uni\CGCourse2025\src\CustomFirstCar\CustomFirstCar.cpp(250,39): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+  CustomFirstCar.vcxproj -> E:\uni\CGCourse2025\src\CustomFirstCar\x64\Debug\CustomFirstCar.exe
