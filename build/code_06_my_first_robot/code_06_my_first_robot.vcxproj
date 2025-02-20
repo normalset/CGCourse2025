@@ -23,7 +23,7 @@
     <None Include="..\..\src\code_05_my_first_car\shaders\basic.vert" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\code_06_my_first_robot\main_robot_final_slerp.cpp">
+    <ClCompile Include="..\..\src\code_06_my_first_robot\main_06.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
