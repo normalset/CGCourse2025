@@ -21,6 +21,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_08_raster", "code_08_r
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_07_manipulation", "code_07_manipulation\code_07_manipulation.vcxproj", "{F0BC91B2-337B-4F9B-80F8-E13D32AA054F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_09_lighting_shading", "code_09_lighting_shading\code_09_lighting_shading.vcxproj", "{0E03C823-9A43-4787-BE56-F8C29A81D8AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_game", "code_game\code_game.vcxproj", "{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,8 +105,27 @@ Global
 		{F0BC91B2-337B-4F9B-80F8-E13D32AA054F}.Release|x64.Build.0 = Release|x64
 		{F0BC91B2-337B-4F9B-80F8-E13D32AA054F}.Release|x86.ActiveCfg = Release|Win32
 		{F0BC91B2-337B-4F9B-80F8-E13D32AA054F}.Release|x86.Build.0 = Release|Win32
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Debug|x64.ActiveCfg = Debug|x64
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Debug|x64.Build.0 = Debug|x64
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Debug|x86.Build.0 = Debug|Win32
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Release|x64.ActiveCfg = Release|x64
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Release|x64.Build.0 = Release|x64
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Release|x86.ActiveCfg = Release|Win32
+		{0E03C823-9A43-4787-BE56-F8C29A81D8AE}.Release|x86.Build.0 = Release|Win32
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Debug|x64.ActiveCfg = Debug|x64
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Debug|x64.Build.0 = Debug|x64
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Debug|x86.ActiveCfg = Debug|Win32
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Debug|x86.Build.0 = Debug|Win32
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Release|x64.ActiveCfg = Release|x64
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Release|x64.Build.0 = Release|x64
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Release|x86.ActiveCfg = Release|Win32
+		{515D45D7-EFA6-4808-BAC4-3CF431BC5FF6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {171F2270-D035-449A-AB45-93B793CC79C3}
 	EndGlobalSection
 EndGlobal

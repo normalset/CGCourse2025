@@ -1,6 +1,7 @@
 #pragma once
 #include <GL/glew.h>
 #include <vector>
+#include "box3.h"
 
 struct renderable {
 
@@ -18,6 +19,15 @@ struct renderable {
 
 	// vector of element array (indices)
 	std::vector<element_array > elements;
+
+	// number of vertices
+	int vn;
+
+	// bounding box
+	box3 bbox;
+
+	// transformation matrix
+	glm::mat4 transform;
 
 	void create() {
 		glGenVertexArrays(1, &vao);
@@ -57,6 +67,8 @@ struct renderable {
 		unsigned int TYPE,
 		unsigned int stride = 0,
 		unsigned int offset = 0) {
+
+		vn = count;
 
 		glBindVertexArray(vao);
 
