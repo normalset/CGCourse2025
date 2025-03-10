@@ -388,7 +388,13 @@ struct shape_maker {
 		s.vn = (unsigned  int)s.positions.size() / 3;
 		s.fn = (unsigned  int)s.indices_triangles.size() / 3;
 	}
-
+	static renderable torus(float in_radius, float out_radius, unsigned int stacks, unsigned int slices) {
+		renderable res;
+		shape s;
+		torus(s, in_radius,   out_radius,     stacks,    slices);
+		s.to_renderable(res);
+		return res;
+	}
 	static void pyramid(shape& s) {
 
 		// Define the vertices of the pyramid

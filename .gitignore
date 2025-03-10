@@ -1,6 +1,7 @@
 *.vsidx
 *.vs
 /3rdparty/*
+!/3rdparty/imgui
 !/3rdparty/glm
 !/3rdparty/glm/include
 !/3rdparty/glm/include/glm
