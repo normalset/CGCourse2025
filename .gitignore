@@ -1,5 +1,6 @@
 *.vsidx
 /3rdparty/*
+!/3rdparty/tinygltf
 !/3rdparty/imgui
 !/3rdparty/glm
 !/3rdparty/glm/include
