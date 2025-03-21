@@ -12,11 +12,15 @@ static void printout_opengl_glsl_info() {
 	const GLubyte* vendor		= glGetString(GL_VENDOR);
 	const GLubyte* version		= glGetString(GL_VERSION);
 	const GLubyte* glslVersion	= glGetString(GL_SHADING_LANGUAGE_VERSION);
+	GLint  uniSize;   
+	glGetIntegerv(GL_MAX_UNIFORM_BLOCK_SIZE, &uniSize);
 
 	std::cout << "GL Vendor            :" << vendor << std::endl;
 	std::cout << "GL Renderer          :" << renderer << std::endl;
 	std::cout << "GL Version (string)  :" << version << std::endl;
 	std::cout << "GLSL Version         :" << glslVersion << std::endl;
+	std::cout << "GL_MAX_UNIFORM_BLOCK_SIZE         :" << uniSize << std::endl;
+
 }
 
 static bool check_gl_errors(int line, const char* file, bool exit_on_error = true) {

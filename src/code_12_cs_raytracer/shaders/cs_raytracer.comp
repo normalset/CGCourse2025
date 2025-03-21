@@ -1,0 +1,84 @@
+#version 460 core  
+
+layout (local_size_x = 32, local_size_y = 32, local_size_z = 1) in;
+
+layout(rgba32f, binding = 0) uniform image2D imgOutput;
+
+
+struct Ray {
+    vec3 orig;
+    vec3 dir;
+};
+
+struct Sphere {
+    vec3 center;
+    float radius;
+    vec3 color;
+};
+
+struct HitInfo {
+    float t;
+    vec3 p;
+    vec3 n;
+    bool hit;
+};
+
+// Initialize a default HitInfo struct
+HitInfo defaultHitInfo() {
+    HitInfo h;
+    h.t = 1e30; // A large number to represent no hit
+    h.hit = false;
+    return h;
+}
+
+HitInfo hit_sphere(Ray r, Sphere s) {
+    float A = dot(r.dir, r.dir);
+    float B = dot(r.dir, r.orig - s.center) * 2.0;
+    float C = dot(r.orig - s.center, r.orig - s.center) - s.radius * s.radius;
+
+    float delta = B * B - 4.0 * A * C;
+
+    if (delta < 0.0)
+        return defaultHitInfo(); // No hit, return default HitInfo
+
+    float t1 = (-B - sqrt(delta)) / (2.0 * A);
+    float t2 = (-B + sqrt(delta)) / (2.0 * A);
+
+    float t_min = min(t1, t2);
+
+    if (t_min < 0.0)
+        t_min = max(t1, t2);
+
+    vec3 p = r.orig + r.dir * t_min;
+    vec3 n = normalize(p - s.center);
+    
+    HitInfo hit;
+    hit.t = t_min;
+    hit.p = p;
+    hit.n = n;
+    hit.hit = (t_min > 0.0);
+
+    return hit;
+}
+
+void main(void) 
+{ 
+
+   ivec2 pix = ivec2(gl_GlobalInvocationID.xy);
+
+
+   Sphere s0;
+   s0.center = vec3(0,0,-3);
+   s0.radius = 1.0;
+   s0.color = vec3(1,0,0);
+
+   Ray r;
+   r.orig = vec3(0.0);
+   r.dir  = vec3( vec2(-1.0) +  2.0 * vec2(pix)/vec2(512.0) , -1.0);
+
+   HitInfo hi = hit_sphere(r,s0);
+
+   if(hi.hit)
+    imageStore(imgOutput, pix, vec4(1.0,0.0,0.0,1.0) );
+
+} 
