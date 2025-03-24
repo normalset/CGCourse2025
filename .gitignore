@@ -1,6 +1,7 @@
 *.vsidx
 *.vs
 /3rdparty/*
+!/3rdparty/tinygltf
 !/3rdparty/imgui
 !/3rdparty/glm
 !/3rdparty/glm/include
@@ -15,3 +16,4 @@ src/code_00_raytracer/.vscode/c_cpp_properties.json
 build/code_00_raytracer/rendering.ppm
 src/code_00_raytracer/main_bk.cpp
 src/code_02_my_first_triangle/Source.cpp
+*.db

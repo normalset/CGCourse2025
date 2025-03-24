@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{93a962a6-1af6-4898-83bd-60967574ccfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{7f5eb284-877c-4bbf-9a7e-c7ef9695076d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\code_10_texture\shaders\texture.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_10_texture\shaders\texture.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_10_texture\shaders\flat.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_10_texture\shaders\flat.frag">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\code_10_texture\main_10.cpp" />
+  </ItemGroup>
+</Project>
