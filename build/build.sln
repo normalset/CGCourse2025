@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_11_fsq_raytracer", "co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_12_cs_raytracer", "code_12_cs_raytracer\code_12_cs_raytracer.vcxproj", "{598570A7-ADF5-42F2-95AE-9B36D89DC73C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_13_hybrid_renderer", "code_13_hybrid_renderer\code_13_hybrid_renderer.vcxproj", "{E910E333-8F43-472E-9DC6-1BF864776642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{598570A7-ADF5-42F2-95AE-9B36D89DC73C}.Release|x64.Build.0 = Release|x64
 		{598570A7-ADF5-42F2-95AE-9B36D89DC73C}.Release|x86.ActiveCfg = Release|Win32
 		{598570A7-ADF5-42F2-95AE-9B36D89DC73C}.Release|x86.Build.0 = Release|Win32
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Debug|x64.ActiveCfg = Debug|x64
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Debug|x64.Build.0 = Debug|x64
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Debug|x86.ActiveCfg = Debug|Win32
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Debug|x86.Build.0 = Debug|Win32
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Release|x64.ActiveCfg = Release|x64
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Release|x64.Build.0 = Release|x64
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Release|x86.ActiveCfg = Release|Win32
+		{E910E333-8F43-472E-9DC6-1BF864776642}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

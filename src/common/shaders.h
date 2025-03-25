@@ -10,6 +10,13 @@
 #include <regex>
 #include "../common/debugging.h"
 
+template <typename... Args>
+std::vector<std::string> join(Args... args) {
+	// Initialize a vector of strings
+	std::vector<std::string> vec = { args... };
+	return vec;
+}
+
 struct shader {
 	GLuint   vertex_shader, geometry_shader, compute_shader, fragment_shader, program;
 
@@ -37,8 +44,19 @@ struct shader {
 		return uni[name];
 	}
 #if defined(GL_VERSION_4_3)
-	void  create_program(const GLchar* nameC) {
+	void  create_program(std::vector<std::string>comp_shader) {
+		std::string compute_shader_src_code;
+		for (unsigned int i = 0; i < comp_shader.size();++i)
+			compute_shader_src_code += textFileRead(comp_shader[i].c_str()) + "\n";
+		create_program(compute_shader_src_code);
+	}
+	void  create_program(const char* nameC) {
 		std::string compute_shader_src_code = textFileRead(nameC);
+		create_program(compute_shader_src_code);
+	}
+
+	void  create_program(std::string compute_shader_src_code) {
+		
 		create_shader(compute_shader_src_code.c_str(), GL_COMPUTE_SHADER);
 		program = glCreateProgram();
 		glAttachShader(program, compute_shader);
@@ -51,10 +69,33 @@ struct shader {
 	}
 #endif
 	/* create a program shader */
-	void  create_program(const GLchar* nameV, const char* nameF) {
+	void  create_program(std::vector<std::string> vert_shader, const char * frag_name) {
+		std::vector<std::string> frag_shader;
+		frag_shader.push_back(frag_name);
+		create_program(vert_shader, frag_shader);
+	}
+	void  create_program( const char* vert_name,  std::vector<std::string> frag_shader) {
+		std::vector<std::string> vert_shader;
+		frag_shader.push_back(vert_name);
+		create_program(vert_shader, frag_shader);
+	}
 
+	void  create_program(std::vector<std::string> vert_shader, std::vector<std::string> frag_shader) {
+		std::string vertex_shader_src_code;
+		for(unsigned int i=0; i < vert_shader.size();++i)
+			vertex_shader_src_code +=  textFileRead(vert_shader[i].c_str())+ "\n";
+
+		std::string fragment_shader_src_code;
+		for (unsigned int i = 0; i < frag_shader.size();++i)
+			fragment_shader_src_code +=  textFileRead(frag_shader[i].c_str()) + "\n";
+		create_program(vertex_shader_src_code, fragment_shader_src_code);
+	}
+	void  create_program(const GLchar* nameV, const char* nameF) {
 		std::string vertex_shader_src_code = textFileRead(nameV);
 		std::string fragment_shader_src_code = textFileRead(nameF);
+		create_program(vertex_shader_src_code, fragment_shader_src_code);
+	}
+	void  create_program(std::string vertex_shader_src_code, std::string fragment_shader_src_code) {
 
 		create_shader(vertex_shader_src_code.c_str(), GL_VERTEX_SHADER);
 		create_shader(fragment_shader_src_code.c_str(), GL_FRAGMENT_SHADER);
@@ -127,7 +168,7 @@ private:
 	 it'll be fine
 	 */
 	void bind_uniform_variables(std::string code) {
-
+		std::replace(code.begin(), code.end(), '\n', ';');
 		code.erase(std::remove(code.begin(), code.end(), '\r'), code.end());
 		code.erase(std::remove(code.begin(), code.end(), '\n'), code.end());
 		code.erase(std::remove(code.begin(), code.end(), '\t'), code.end());
