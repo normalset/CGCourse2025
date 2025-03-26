@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\code_15_onthefly_coordinates\main_15.cpp" />
+    <ClCompile Include="..\..\3rdparty\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{f9eaa3af-d87f-4739-9256-df0c25ccb947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{68451be5-7dbe-4da7-87ef-69feee2a2ae0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\code_15_onthefly_coordinates\shaders\flat.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_15_onthefly_coordinates\shaders\flat.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_15_onthefly_coordinates\shaders\texture.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_15_onthefly_coordinates\shaders\texture.vert">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -154,7 +154,6 @@ void main(void)
    s0.material = m;
 
    /* create a quad */
-    ;
    q0 =  Quad(create_axes(vec3(1.0,0.0,0.0),vec3(0.0,1.0,0.0)),vec3(0.0,0.0,0.0),vec2(4,4),m);
 
    
@@ -173,8 +172,7 @@ void main(void)
    HitInfo hi = hit_scene(r,0.0,100);
    
    if(hi.hit){
-        vec3 c = phong(l_dir,-r.dir,hi.n,hi.m);    
-        imageStore(imgOutput, pix, vec4(c,1.0) );
+        vec3 c = phong(l_dir,-r.dir,hi.n,hi.m);     
+         imageStore(imgOutput, pix, vec4(c,1.0) );
         }
-    
 } 

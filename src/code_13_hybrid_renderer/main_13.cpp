@@ -342,8 +342,16 @@ int main(int argc , char ** argv)
 	glEnable(GL_DEPTH_TEST);
 	glUseProgram(basic_shader.program);
 /* Loop until the user closes the window */
+	int nf = 0;
+	int cstart = clock();
 	while (!glfwWindowShouldClose(window))
 	{
+		if (clock() - cstart > CLOCKS_PER_SEC) {
+			std::cout << nf << std::endl;
+			nf = 0;
+			cstart = clock();
+		}
+		nf++;
 		// light direction
 		/* Update the light direction using the trackball tb[1]
 		   It's just a rotation

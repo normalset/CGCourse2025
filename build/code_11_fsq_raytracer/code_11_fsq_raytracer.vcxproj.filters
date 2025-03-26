@@ -14,7 +14,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\code_11_fsq_raytracer\rtcode.cpp" />
     <ClCompile Include="..\..\src\code_11_fsq_raytracer\main_11.cpp" />
   </ItemGroup>
 </Project>

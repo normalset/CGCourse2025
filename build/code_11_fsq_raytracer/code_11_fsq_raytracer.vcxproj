@@ -20,9 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\code_11_fsq_raytracer\main_11.cpp" />
-    <ClCompile Include="..\..\src\code_11_fsq_raytracer\rtcode.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\code_11_fsq_raytracer\shaders\basic.vert" />
