@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\src\code_14_picking\shaders\basic.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_14_picking\shaders\basic.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_14_picking\shaders\picking.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_14_picking\shaders\picking.vert">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{4b2ab043-bc1c-45f8-8bb4-fa82c6221bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{d15697e3-10e8-49c7-8295-a962b6e1d42b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

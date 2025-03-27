@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\src\code_05_my_first_car\shaders\basic.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_05_my_first_car\shaders\basic.frag">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{f3ab355a-a1e0-439a-ba20-b873551fd4f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\code_05_my_first_car\main_05.cpp" />
+  </ItemGroup>
+</Project>

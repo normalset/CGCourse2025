@@ -19,13 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\code_05_my_first_car\main_car.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\src\code_05_my_first_car\shaders\basic.frag" />
     <None Include="..\..\src\code_05_my_first_car\shaders\basic.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\code_05_my_first_car\main_05.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{53DF539F-DBC6-4505-9533-24E1E7389233}</ProjectGuid>

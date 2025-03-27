@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\code_08_raster\main_08.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\code_08_raster\shaders\flat.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_08_raster\shaders\basic.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_08_raster\shaders\basic.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_08_raster\shaders\flat.vert">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{7ae4b932-44be-4e05-8095-d3ddb6ccb710}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

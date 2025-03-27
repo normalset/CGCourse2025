@@ -193,7 +193,21 @@ struct gltf_loader {
 				// setup the material
 				tinygltf::Material mat = model.materials[primitive.material];
 				int index;
+
+
+				memcpy_s(r.mater.base_color_factor,sizeof(double)*4,&mat.pbrMetallicRoughness.baseColorFactor[0], sizeof(double) * 4);
 				
+				r.mater.alpha_mode   = mat.alphaMode;
+				r.mater.alpha_cutoff = mat.alphaCutoff;
+
+				index = mat.pbrMetallicRoughness.baseColorTexture.index;
+				r.mater.base_color_texture = (index != -1)?this->id_textures[index]: this->id_textures.empty()?-1:this->id_textures[0];
+
+				index = mat.normalTexture.index;
+				r.mater.normal_texture = (index != -1) ? this->id_textures[index] : -1;
+
+				index = mat.emissiveTexture.index;
+				r.mater.emissive_texture = (index != -1) ? this->id_textures[index] : -1;
 			}
 		}
 		if (!model.nodes[i_node].children.empty()) {

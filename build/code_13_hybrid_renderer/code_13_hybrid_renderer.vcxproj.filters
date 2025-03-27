@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{67f21592-0ead-4a78-8a5a-5cc85f17f0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{4638e457-9bf9-47ba-8867-f889ba539ba7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\basic.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\basic.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\cs_raytracer.comp">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\flat.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\flat.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\texture.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\texture.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\directives.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\phong.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_13_hybrid_renderer\shaders\phong_material.glsl">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\code_13_hybrid_renderer\main_13.cpp" />
+  </ItemGroup>
+</Project>
