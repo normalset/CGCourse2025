@@ -4,11 +4,10 @@ struct PhongMaterial{
  vec3  diffuse_color;
  vec3  specular_color;
  vec3  emissive_color;
- vec3  light_color;
  float shininess;
 };
 /* phong lighting */
-vec3 phong ( vec3 L, vec3 V, vec3 N, PhongMaterial m){
+vec3 phong ( vec3 L, vec3 V, vec3 N, PhongMaterial m,vec3 light_color){
 
 	N = normalize(N);
 	V = normalize(V);
@@ -19,5 +18,5 @@ vec3 phong ( vec3 L, vec3 V, vec3 N, PhongMaterial m){
 	
 	float spec = ((LN>0.f)?1.f:0.f) * pow(max(0.0,dot(V,R)) ,m.shininess);
 	
-	return (m.ambient_color+LN*m.diffuse_color + spec * m.specular_color)*m.light_color;
+	return (m.ambient_color+LN*m.diffuse_color + spec * m.specular_color)* light_color;
 }
