@@ -1,6 +1,6 @@
 
 
-layout (local_size_x = 32, local_size_y = 32, local_size_z = 1) in;
+layout (local_size_x = 4, local_size_y = 4, local_size_z = 1) in;
 layout(rgba32f, binding = 0) uniform image2D imgOutput;
 
 uniform mat4 uProjInv;
@@ -8,6 +8,7 @@ uniform mat4 uViewInv;
 uniform mat4 uModelInv;
 uniform vec3 uLDir;
 
+uniform sampler2D uMattoni;
 
 
 mat3 create_axes(in vec3 x_axis, in vec3 norm){
@@ -116,7 +117,14 @@ bool hit_quad( Ray r,  Quad q, out HitInfo nfo){
     nfo.m = q.material;
     nfo.t = t;
     nfo.hit = true;
+    
    
+    vec2 uv =   (intPoint.xy- (-q.size/2.0))  / q.size;
+    vec3 c = texture(uMattoni,uv).xyz;
+    nfo.m.diffuse_color = c;
+    nfo.m.specular_color = vec3(0);
+    
+
     return true;
 }
 
@@ -139,12 +147,15 @@ HitInfo hit_scene(  Ray r,   float m, float M ){
  return nfoT;
 }
 
-
+shared vec3 samples[16];
 void main(void) 
 { 
-	PhongMaterial m = PhongMaterial( uAmbientColor,uDiffuseColor,uSpecularColor,uEmissiveColor,uLightColor,uShininess);
+	PhongMaterial m = PhongMaterial( uAmbientColor,uDiffuseColor,uSpecularColor,uEmissiveColor,uShininess);
 
-   ivec2 pix = ivec2(gl_GlobalInvocationID.xy);
+   ivec2 pix = ivec2(gl_GlobalInvocationID.xy/4);
+
+
+   uint id_sample = 4*gl_LocalInvocationID.y+gl_LocalInvocationID.x;
 
    imageStore(imgOutput, pix, vec4(0.0,0.0,0.0,1.0) );
 
@@ -159,7 +170,12 @@ void main(void)
    
    Ray r;
 
-   vec2 rpos = vec2(-1.0) +  2.0 * vec2(pix)/vec2(512.0);
+   vec2 rc  =vec2(gl_LocalInvocationID.x/4.0,gl_LocalInvocationID.y/4.0);
+
+   vec2 rpos = vec2(-1.0) +  2.0 * vec2(pix+rc)/vec2(512.0);
+
+
+
    vec4 p0 = uProjInv * vec4(rpos,-1.0,1.0);
    p0 /= p0.w;
    vec4 p1 = uProjInv * vec4(rpos, 1.0,1.0);
@@ -171,8 +187,25 @@ void main(void)
 
    HitInfo hi = hit_scene(r,0.0,100);
    
+   samples[id_sample] = vec3(0.0);
    if(hi.hit){
-        vec3 c = phong(l_dir,-r.dir,hi.n,hi.m);     
-         imageStore(imgOutput, pix, vec4(c,1.0) );
+        vec3 c = phong(l_dir,-r.dir,hi.n,hi.m,uLightColor);     
+         samples[id_sample] = c;
+//         imageStore(imgOutput, pix, vec4(c,1.0) );
         }
+
+    barrier(); // Ensure all threads have written their results before proceeding
+
+    // After barrier, we can safely average the results
+    vec3 finalColor = vec3(0.0);
+    if (gl_LocalInvocationIndex == 0) {
+
+	    for (uint i = 0; i < 16; ++i) {
+		    finalColor += samples[i];
+	    }
+	    finalColor /= 16.0;
+
+	    // Write the averaged color to the output image
+	    imageStore(imgOutput, pix, vec4(finalColor,1.0));
+     }
 } 

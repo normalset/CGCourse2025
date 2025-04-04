@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\3rdparty\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\3rdparty\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\3rdparty\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\src\code_16_shadows\main_16.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\common\aabb.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\box3.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\debugging.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\frame_buffer_object.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\game_builder.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\gltf_loader.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\intersection.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\matrix_stack.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\octree.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\path.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\renderable.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\shaders.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\simple_shapes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\texture.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\trackball.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\view_manipulator.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{0a6c9b51-20ac-4280-b189-7a6c24d49f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{0d329272-4e0d-4f0a-a01d-6b06c6e1e887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{234a9c27-1cd0-4311-88ff-414ca0deafd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\code_16_shadows\shaders\blur.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\depthmap.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\depthmap.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\flat.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\flat.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\fsq.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\fsq.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\shadow_mapping.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\shadow_mapping.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\src\code_16_shadows\shaders\texture.frag">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

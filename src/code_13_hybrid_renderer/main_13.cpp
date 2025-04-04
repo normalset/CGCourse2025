@@ -14,6 +14,7 @@
 #include "../common/intersection.h"
 #include "../common/trackball.h"
 
+
 /*
 GLM library for math  https://github.com/g-truc/glm
 it's a header-only library. You can just copy the folder glm into 3dparty
@@ -23,6 +24,11 @@ and set the path properly.
 #include <glm/ext.hpp>  
 #include <glm/gtx/string_cast.hpp>
 
+#define STB_IMAGE_IMPLEMENTATION
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#define TINYGLTF_IMPLEMENTATION
+#include "../common/gltf_loader.h"
+#include "../common/texture.h"
 int width, height;
 
 #define RASTERIZATION 0
@@ -241,6 +247,30 @@ int main(int argc , char ** argv)
 
 	glewInit();
 
+	// Variabili per i limiti
+	GLuint maxWorkGroupSize[3];
+	GLuint maxWorkGroupCount[3];
+	GLint maxWorkGroupInvocations;
+	check_gl_errors(__LINE__, __FILE__);
+	// Recupera il massimo numero di thread per workgroup in ciascuna dimensione
+	int workGroupSizes[3] = { 0 };
+	glGetIntegeri_v(GL_MAX_COMPUTE_WORK_GROUP_SIZE, 0, &workGroupSizes[0]);
+	glGetIntegeri_v(GL_MAX_COMPUTE_WORK_GROUP_SIZE, 1, &workGroupSizes[1]);
+	glGetIntegeri_v(GL_MAX_COMPUTE_WORK_GROUP_SIZE, 2, &workGroupSizes[2]);
+	check_gl_errors(__LINE__, __FILE__);
+	// Recupera il massimo numero di workgroup che puoi lanciare in ogni dimensione
+//	glGetIntegerv(GL_MAX_COMPUTE_WORK_GROUP_COUNT, maxWorkGroupCount);
+	std::cout << "Max Workgroup Count (X, Y, Z): "
+		<< workGroupSizes[0] << ", "
+		<< workGroupSizes[1] << ", "
+		<< workGroupSizes[2] << std::endl;
+	check_gl_errors(__LINE__, __FILE__);
+	// Recupera il numero massimo di invocazioni di thread per workgroup
+	glGetIntegerv(GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS, &maxWorkGroupInvocations);
+	std::cout << "Max Workgroup Invocations: " << maxWorkGroupInvocations << std::endl;
+
+	check_gl_errors(__LINE__, __FILE__);
+
 	/* initialize IMGUI */
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO();
@@ -301,6 +331,9 @@ int main(int argc , char ** argv)
 	shader raytracer;
 	raytracer.create_program(join("./shaders/directives.glsl", "./shaders/phong_material.glsl", "./shaders/phong.glsl","./shaders/cs_raytracer.comp"));
 	
+	texture mattoni;
+	mattoni.load("./textures/brick_wall2-diff-512.png", 1);
+
 	// create a texture    
 	unsigned int texture;
 	glGenTextures(1, &texture);
@@ -377,7 +410,9 @@ int main(int argc , char ** argv)
 			glUniform3fv(basic_shader["uLightColor"], 1, &l_color[0]);
 			glUniform3f(basic_shader["uLDir"], Ldir.x, Ldir.y, Ldir.z);
 
-
+		//	glUniform1i(basic_shader["uMattoni"], 1);
+		//	glActiveTexture(GL_TEXTURE1);
+		//	glBindTexture(GL_TEXTURE_2D, mattoni.id);
 
 
 			r_sphere.bind();
@@ -421,9 +456,13 @@ int main(int argc , char ** argv)
 			glUniform3fv(raytracer["uLightColor"], 1, &l_color[0]);
 			
 
+			glUniform1i(raytracer["uMattoni"], 1);
+			glActiveTexture(GL_TEXTURE1);
+			glBindTexture(GL_TEXTURE_2D, mattoni.id);
+
 
 			// dispatch 16x16x1 workgorups
-			glDispatchCompute(512/32  , 512/32 , 1);
+			glDispatchCompute(512   , 512  , 1);
 			glMemoryBarrier(GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
 
 

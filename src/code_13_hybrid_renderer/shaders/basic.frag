@@ -12,11 +12,11 @@ uniform int	 uShadingMode;
 
 void main(void) 
 {    
-	PhongMaterial m = PhongMaterial( uAmbientColor,uDiffuseColor,uSpecularColor,uEmissiveColor,uLightColor,uShininess);
+	PhongMaterial m = PhongMaterial( uAmbientColor,uDiffuseColor,uSpecularColor,uEmissiveColor,uShininess);
 
 	if(uShadingMode == 1){
 		vec3 N = normalize(cross(dFdx(vPosVS),dFdy(vPosVS)));
-		color = vec4(phong(vLDirVS,normalize(-vPosVS),N,m),1.0);
+		color = vec4(phong(vLDirVS,normalize(-vPosVS),N,m,uLightColor),1.0);
 	}
  	else
 	if(uShadingMode == 2){
@@ -24,7 +24,7 @@ void main(void)
 	}
  	else
 	if(uShadingMode == 3){
-		color = vec4(phong(vLDirVS,normalize(-vPosVS),normalize(vNormalVS),m),1.0);
+		color = vec4(phong(vLDirVS,normalize(-vPosVS),normalize(vNormalVS),m,uLightColor),1.0);
 	}
 	else
 	/* just output the interpolated vertex normal as color		*/

@@ -37,6 +37,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_14_texture_bump_mappin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_15_onthefly_coordinates", "code_15_onthefly_coordinates\code_15_onthefly_coordinates.vcxproj", "{3340176E-8EF5-4202-BE35-9B058120A434}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_16_shadows", "code_16_shadows\code_16_shadows.vcxproj", "{221E4A87-9FF3-4612-95C4-11DAD5B15329}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "code_openscad_loader", "code_openscad_loader\code_openscad_loader.vcxproj", "{31EBB728-3A5C-466D-AD21-F688EE892326}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +185,22 @@ Global
 		{3340176E-8EF5-4202-BE35-9B058120A434}.Release|x64.Build.0 = Release|x64
 		{3340176E-8EF5-4202-BE35-9B058120A434}.Release|x86.ActiveCfg = Release|Win32
 		{3340176E-8EF5-4202-BE35-9B058120A434}.Release|x86.Build.0 = Release|Win32
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Debug|x64.ActiveCfg = Debug|x64
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Debug|x64.Build.0 = Debug|x64
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Debug|x86.ActiveCfg = Debug|Win32
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Debug|x86.Build.0 = Debug|Win32
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Release|x64.ActiveCfg = Release|x64
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Release|x64.Build.0 = Release|x64
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Release|x86.ActiveCfg = Release|Win32
+		{221E4A87-9FF3-4612-95C4-11DAD5B15329}.Release|x86.Build.0 = Release|Win32
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Debug|x64.ActiveCfg = Debug|x64
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Debug|x64.Build.0 = Debug|x64
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Debug|x86.ActiveCfg = Debug|Win32
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Debug|x86.Build.0 = Debug|Win32
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Release|x64.ActiveCfg = Release|x64
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Release|x64.Build.0 = Release|x64
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Release|x86.ActiveCfg = Release|Win32
+		{31EBB728-3A5C-466D-AD21-F688EE892326}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

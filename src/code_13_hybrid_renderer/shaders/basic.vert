@@ -16,7 +16,7 @@ uniform int	 uShadingMode;
 
 void main(void) 
 { 
-	PhongMaterial m = PhongMaterial( uAmbientColor,uDiffuseColor,uSpecularColor,uEmissiveColor,uLightColor,uShininess);
+	PhongMaterial m = PhongMaterial( uAmbientColor,uDiffuseColor,uSpecularColor,uEmissiveColor,uShininess);
 
 	vLDirVS   =  (uView*vec4(uLDir,0.f)).xyz; 
 
@@ -27,7 +27,7 @@ void main(void)
 	vPosVS = (uView*uModel*vec4(aPosition, 1.0)).xyz; 
 	
 	/* compute lighiting in the vertex shader (Gauraud shading) */
-	vColor    = phong(vLDirVS,normalize(-vPosVS),normalize(vNormalVS),m);
+	vColor    = phong(vLDirVS,normalize(-vPosVS),normalize(vNormalVS),m,uLightColor);
 
     gl_Position = uProj*uView*uModel*vec4(aPosition, 1.0); 
 }
