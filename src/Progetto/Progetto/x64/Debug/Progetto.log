@@ -1,0 +1,502 @@
+﻿  Progetto.cpp
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1251,24): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1273,20): warning C4244: '=': conversione da 'float' a 'unsigned int'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1274,20): warning C4244: '=': conversione da 'float' a 'unsigned int'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1275,20): warning C4244: '=': conversione da 'float' a 'unsigned int'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1473,12): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1481,12): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(1523,26): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(2597,29): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(2601,29): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(2605,30): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvg.h(2609,31): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvgrast.h(334,65): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\src\Progetto\3dparty\nanosvg\src\nanosvgrast.h(334,82): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(730,12): error C2084: la funzione 'int stbi__cpuid3(void)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(730,12):
+      vedi la precedente definizione di 'stbi__cpuid3'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(752,12): error C2084: la funzione 'int stbi__sse2_available(void)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(752,12):
+      vedi la precedente definizione di 'stbi__sse2_available'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(754,14): error C2440: 'inizializzazione': impossibile convertire da 'int (__cdecl *)(void)' a 'int'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(754,14):
+      Non vi sono contesti in cui sia possibile eseguire questa conversione
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(818,3): error C2371: 'stbi__context': ridefinizione. Tipi di base differenti.
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(818,3):
+      vedere la dichiarazione di 'stbi__context'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(824,13): error C2084: la funzione 'void stbi__start_mem(stbi__context *,const stbi_uc *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(824,13):
+      vedi la precedente definizione di 'stbi__start_mem'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(834,13): error C2084: la funzione 'void stbi__start_callbacks(stbi__context *,stbi_io_callbacks *,void *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(834,13):
+      vedi la precedente definizione di 'stbi__start_callbacks'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(848,12): error C2084: la funzione 'int stbi__stdio_read(void *,char *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(848,12):
+      vedi la precedente definizione di 'stbi__stdio_read'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(853,13): error C2084: la funzione 'void stbi__stdio_skip(void *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(853,13):
+      vedi la precedente definizione di 'stbi__stdio_skip'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(863,12): error C2084: la funzione 'int stbi__stdio_eof(void *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(863,12):
+      vedi la precedente definizione di 'stbi__stdio_eof'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(868,26): error C2374: 'stbi__stdio_callbacks': ridefinizione. Inizializzazione multipla.
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(868,26):
+      vedere la dichiarazione di 'stbi__stdio_callbacks'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(868,26): error C2086: 'stbi_io_callbacks stbi__stdio_callbacks': ridefinizione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(868,26):
+      vedere la dichiarazione di 'stbi__stdio_callbacks'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(875,13): error C2084: la funzione 'void stbi__start_file(stbi__context *,FILE *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(875,13):
+      vedi la precedente definizione di 'stbi__start_file'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(877,4): error C2264: 'stbi__start_callbacks': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(884,13): error C2084: la funzione 'void stbi__rewind(stbi__context *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(884,13):
+      vedi la precedente definizione di 'stbi__rewind'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(895,4): error C2365: 'STBI_ORDER_RGB': ridefinizione. La definizione precedente era 'enumeratore'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(895,4):
+      vedere la dichiarazione di 'STBI_ORDER_RGB'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(896,4): error C2365: 'STBI_ORDER_BGR': ridefinizione. La definizione precedente era 'enumeratore'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(896,4):
+      vedere la dichiarazione di 'STBI_ORDER_BGR'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(904,3): error C2371: 'stbi__result_info': ridefinizione. Tipi di base differenti.
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(904,3):
+      vedere la dichiarazione di 'stbi__result_info'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(968,13): error C2086: 'const char *stbi__g_failure_reason': ridefinizione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(968,13):
+      vedere la dichiarazione di 'stbi__g_failure_reason'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(970,21): error C2084: la funzione 'const char *stbi_failure_reason(void)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(970,21):
+      vedi la precedente definizione di 'stbi_failure_reason'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(976,12): warning C4003: argomenti insufficienti per la chiamata 'stbi__err' della macro simile a funzione
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(976,12): error C2084: la funzione 'int stbi__err(const char *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(976,12):
+      vedi la precedente definizione di 'stbi__err'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(983,14): error C2084: la funzione 'void *stbi__malloc(size_t)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(983,14):
+      vedi la precedente definizione di 'stbi__malloc'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1000,12): error C2084: la funzione 'int stbi__addsizes_valid(int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1000,12):
+      vedi la precedente definizione di 'stbi__addsizes_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1012,12): error C2084: la funzione 'int stbi__mul2sizes_valid(int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1012,12):
+      vedi la precedente definizione di 'stbi__mul2sizes_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1022,12): error C2084: la funzione 'int stbi__mad2sizes_valid(int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1022,12):
+      vedi la precedente definizione di 'stbi__mad2sizes_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1024,32): warning C4551: chiamata di funzione senza elenco di argomenti
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1024,32): error C2568: '&&': non è possibile risolvere l'overload della funzione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1024,32):
+      potrebbe essere 'int stbi__mul2sizes_valid(int,int)'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1029,12): error C2084: la funzione 'int stbi__mad3sizes_valid(int,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1029,12):
+      vedi la precedente definizione di 'stbi__mad3sizes_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1031,32): warning C4551: chiamata di funzione senza elenco di argomenti
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1031,32): error C2568: '&&': non è possibile risolvere l'overload della funzione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1031,32):
+      potrebbe essere 'int stbi__mul2sizes_valid(int,int)'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1037,12): error C2084: la funzione 'int stbi__mad4sizes_valid(int,int,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1037,12):
+      vedi la precedente definizione di 'stbi__mad4sizes_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1039,32): warning C4551: chiamata di funzione senza elenco di argomenti
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1039,32): error C2568: '&&': non è possibile risolvere l'overload della funzione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1039,32):
+      potrebbe essere 'int stbi__mul2sizes_valid(int,int)'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1046,14): error C2084: la funzione 'void *stbi__malloc_mad2(int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1046,14):
+      vedi la precedente definizione di 'stbi__malloc_mad2'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1048,8): warning C4551: chiamata di funzione senza elenco di argomenti
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1053,14): error C2084: la funzione 'void *stbi__malloc_mad3(int,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1053,14):
+      vedi la precedente definizione di 'stbi__malloc_mad3'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1055,8): warning C4551: chiamata di funzione senza elenco di argomenti
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1060,14): error C2084: la funzione 'void *stbi__malloc_mad4(int,int,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1060,14):
+      vedi la precedente definizione di 'stbi__malloc_mad4'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1062,8): warning C4551: chiamata di funzione senza elenco di argomenti
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1068,12): error C2084: la funzione 'int stbi__addints_valid(int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1068,12):
+      vedi la precedente definizione di 'stbi__addints_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1076,12): error C2084: la funzione 'int stbi__mul2shorts_valid(short,short)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1076,12):
+      vedi la precedente definizione di 'stbi__mul2shorts_valid'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1099,14): error C2084: la funzione 'void stbi_image_free(void *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1099,14):
+      vedi la precedente definizione di 'stbi_image_free'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1112,12): error C2374: 'stbi__vertically_flip_on_load_global': ridefinizione. Inizializzazione multipla.
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1112,12):
+      vedere la dichiarazione di 'stbi__vertically_flip_on_load_global'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1112,12): error C2086: 'int stbi__vertically_flip_on_load_global': ridefinizione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1112,12):
+      vedere la dichiarazione di 'stbi__vertically_flip_on_load_global'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1114,14): error C2084: la funzione 'void stbi_set_flip_vertically_on_load(int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1114,14):
+      vedi la precedente definizione di 'stbi_set_flip_vertically_on_load'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1122,30): error C2086: 'int stbi__vertically_flip_on_load_local': ridefinizione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1122,30):
+      vedere la dichiarazione di 'stbi__vertically_flip_on_load_local'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1122,67): error C2086: 'int stbi__vertically_flip_on_load_set': ridefinizione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1122,67):
+      vedere la dichiarazione di 'stbi__vertically_flip_on_load_set'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1124,14): error C2084: la funzione 'void stbi_set_flip_vertically_on_load_thread(int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1124,14):
+      vedi la precedente definizione di 'stbi_set_flip_vertically_on_load_thread'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1135,14): error C2084: la funzione 'void *stbi__load_main(stbi__context *,int *,int *,int *,int,stbi__result_info *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1135,14):
+      vedi la precedente definizione di 'stbi__load_main'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1188,17): error C2084: la funzione 'stbi_uc *stbi__convert_16_to_8(stbi__uint16 *,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1188,17):
+      vedi la precedente definizione di 'stbi__convert_16_to_8'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1204,22): error C2084: la funzione 'stbi__uint16 *stbi__convert_8_to_16(stbi_uc *,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1204,22):
+      vedi la precedente definizione di 'stbi__convert_8_to_16'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1220,13): error C2084: la funzione 'void stbi__vertical_flip(void *,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1220,13):
+      vedi la precedente definizione di 'stbi__vertical_flip'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1245,13): error C2084: la funzione 'void stbi__vertical_flip_slices(void *,int,int,int,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1245,13):
+      vedi la precedente definizione di 'stbi__vertical_flip_slices'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1258,23): error C2084: la funzione 'unsigned char *stbi__load_and_postprocess_8bit(stbi__context *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1258,23):
+      vedi la precedente definizione di 'stbi__load_and_postprocess_8bit'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1261,19): error C2264: 'stbi__load_main': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1270,37): error C2568: '=': non è possibile risolvere l'overload della funzione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1270,37):
+      potrebbe essere 'stbi_uc *stbi__convert_16_to_8(stbi__uint16 *,int,int,int)'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1284,22): error C2084: la funzione 'stbi__uint16 *stbi__load_and_postprocess_16bit(stbi__context *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1284,22):
+      vedi la precedente definizione di 'stbi__load_and_postprocess_16bit'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1287,19): error C2264: 'stbi__load_main': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1296,37): error C2568: '=': non è possibile risolvere l'overload della funzione
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1296,37):
+      potrebbe essere 'stbi__uint16 *stbi__convert_8_to_16(stbi_uc *,int,int,int)'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1312,13): error C2084: la funzione 'void stbi__float_postprocess(float *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1312,13):
+      vedi la precedente definizione di 'stbi__float_postprocess'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1335,14): error C2084: la funzione 'FILE *stbi__fopen(const char *,const char *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1335,14):
+      vedi la precedente definizione di 'stbi__fopen'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1364,18): error C2084: la funzione 'stbi_uc *stbi_load(const char *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1364,18):
+      vedi la precedente definizione di 'stbi_load'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1366,12): error C2440: 'inizializzazione': impossibile convertire da 'FILE *(__cdecl *)(const char *,const char *)' a 'FILE *'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1366,12):
+      Non vi sono contesti in cui sia possibile eseguire questa conversione
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1374,18): error C2084: la funzione 'stbi_uc *stbi_load_from_file(FILE *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1374,18):
+      vedi la precedente definizione di 'stbi_load_from_file'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1378,4): error C2264: 'stbi__start_file': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1379,13): error C2264: 'stbi__load_and_postprocess_8bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1387,23): error C2084: la funzione 'stbi_us *stbi_load_from_file_16(FILE *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1387,23):
+      vedi la precedente definizione di 'stbi_load_from_file_16'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1391,4): error C2264: 'stbi__start_file': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1392,13): error C2264: 'stbi__load_and_postprocess_16bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1400,18): error C2084: la funzione 'stbi_us *stbi_load_16(const char *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1400,18):
+      vedi la precedente definizione di 'stbi_load_16'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1402,12): error C2440: 'inizializzazione': impossibile convertire da 'FILE *(__cdecl *)(const char *,const char *)' a 'FILE *'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1402,12):
+      Non vi sono contesti in cui sia possibile eseguire questa conversione
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1405,13): error C2264: 'stbi_load_from_file_16': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1413,18): error C2084: la funzione 'stbi_us *stbi_load_16_from_memory(const stbi_uc *,int,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1413,18):
+      vedi la precedente definizione di 'stbi_load_16_from_memory'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1416,4): error C2264: 'stbi__start_mem': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1417,11): error C2264: 'stbi__load_and_postprocess_16bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1420,18): error C2084: la funzione 'stbi_us *stbi_load_16_from_callbacks(const stbi_io_callbacks *,void *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1420,18):
+      vedi la precedente definizione di 'stbi_load_16_from_callbacks'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1423,4): error C2264: 'stbi__start_callbacks': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1424,11): error C2264: 'stbi__load_and_postprocess_16bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1427,18): error C2084: la funzione 'stbi_uc *stbi_load_from_memory(const stbi_uc *,int,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1427,18):
+      vedi la precedente definizione di 'stbi_load_from_memory'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1430,4): error C2264: 'stbi__start_mem': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1431,11): error C2264: 'stbi__load_and_postprocess_8bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1434,18): error C2084: la funzione 'stbi_uc *stbi_load_from_callbacks(const stbi_io_callbacks *,void *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1434,18):
+      vedi la precedente definizione di 'stbi_load_from_callbacks'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1437,4): error C2264: 'stbi__start_callbacks': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1438,11): error C2264: 'stbi__load_and_postprocess_8bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1442,18): error C2084: la funzione 'stbi_uc *stbi_load_gif_from_memory(const stbi_uc *,int,int **,int *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1442,18):
+      vedi la precedente definizione di 'stbi_load_gif_from_memory'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1446,4): error C2264: 'stbi__start_mem': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1458,15): error C2084: la funzione 'float *stbi__loadf_main(stbi__context *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1458,15):
+      vedi la precedente definizione di 'stbi__loadf_main'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1470,11): error C2264: 'stbi__load_and_postprocess_8bit': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1476,16): error C2084: la funzione 'float *stbi_loadf_from_memory(const stbi_uc *,int,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1476,16):
+      vedi la precedente definizione di 'stbi_loadf_from_memory'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1479,4): error C2264: 'stbi__start_mem': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1480,11): error C2264: 'stbi__loadf_main': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1483,16): error C2084: la funzione 'float *stbi_loadf_from_callbacks(const stbi_io_callbacks *,void *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1483,16):
+      vedi la precedente definizione di 'stbi_loadf_from_callbacks'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1486,4): error C2264: 'stbi__start_callbacks': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1487,11): error C2264: 'stbi__loadf_main': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1491,16): error C2084: la funzione 'float *stbi_loadf(const char *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1491,16):
+      vedi la precedente definizione di 'stbi_loadf'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1494,12): error C2440: 'inizializzazione': impossibile convertire da 'FILE *(__cdecl *)(const char *,const char *)' a 'FILE *'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1494,12):
+      Non vi sono contesti in cui sia possibile eseguire questa conversione
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1501,16): error C2084: la funzione 'float *stbi_loadf_from_file(FILE *,int *,int *,int *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1501,16):
+      vedi la precedente definizione di 'stbi_loadf_from_file'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1504,4): error C2264: 'stbi__start_file': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1505,11): error C2264: 'stbi__loadf_main': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1515,13): error C2084: la funzione 'int stbi_is_hdr_from_memory(const stbi_uc *,int)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1515,13):
+      vedi la precedente definizione di 'stbi_is_hdr_from_memory'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1519,4): error C2264: 'stbi__start_mem': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1529,18): error C2084: la funzione 'int stbi_is_hdr(const char *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1529,18):
+      vedi la precedente definizione di 'stbi_is_hdr'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1531,12): error C2440: 'inizializzazione': impossibile convertire da 'FILE *(__cdecl *)(const char *,const char *)' a 'FILE *'
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1531,12):
+      Non vi sono contesti in cui sia possibile eseguire questa conversione
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1540,13): error C2084: la funzione 'int stbi_is_hdr_from_file(FILE *)' ha già un corpo
+  (compilazione del file di origine 'Progetto.cpp')
+      D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1540,13):
+      vedi la precedente definizione di 'stbi_is_hdr_from_file'
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1546,4): error C2264: 'stbi__start_file': errore nella definizione o dichiarazione di funzione. Funzione non chiamata.
+  (compilazione del file di origine 'Progetto.cpp')
+  
+D:\uni\CGCourse2025\3rdparty\tinygltf\stb_image.h(1546,4): error C1003: il conteggio degli errori supera 100. Interruzione della compilazione
+  (compilazione del file di origine 'Progetto.cpp')
+  

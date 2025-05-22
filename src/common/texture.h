@@ -12,8 +12,19 @@ struct texture {
 	GLuint id;
 	GLuint load(std::string name, GLuint tu) {
 		unsigned char * data;
+
+		//Enable verical flippiung of the image during loading
+		stbi_set_flip_vertically_on_load(true);
+
 		data = stbi_load(name.c_str(), &x_size, &y_size, &n_components, 0);
-		stbi__vertical_flip(data, x_size, y_size, n_components);
+		//stbi__vertical_flip(data, x_size, y_size, n_components);
+
+		data = stbi_load(name.c_str(), &x_size, &y_size, &n_components, 0);
+		if (!data) {
+			// Handle error if the image fails to load
+			throw std::runtime_error("Failed to load texture: " + name);
+		}
+
 		glActiveTexture(GL_TEXTURE0 + tu);
 		glGenTextures(1, &id);
 		glBindTexture(GL_TEXTURE_2D, id);
