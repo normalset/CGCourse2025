@@ -36,7 +36,6 @@
 #include "headlights.h"
 #include "projector.h"
 #include "lamps.h"
-#include "stopwatch.h"
 
 #include <algorithm>
 #include <glm/glm.hpp>
@@ -60,8 +59,8 @@ int height = 900;
 #define SKY_COLOR_RGB  0.3f, 0.3f, 0.3f
 
 // opening angles of the street lamps' beam
-#define LAMP_ANGLE_IN   glm::radians(15.0f)
-#define LAMP_ANGLE_OUT  glm::radians(50.0f)
+#define LAMP_ANGLE_IN   glm::radians(10.0f)
+#define LAMP_ANGLE_OUT  glm::radians(40.0f)
 
 // opening angle of the headlights' beam
 #define HEADLIGHT_ANGLE  glm::radians(50.f)
@@ -81,12 +80,10 @@ float headlight_nighttime = glm::cos(glm::radians(90.0 - HEADLIGHT_NIGHTTIME_THR
 #define LAMP_SHADOWMAP_SIZE        1024u
 #define HEADLIGHT_SHADOWMAP_SIZE   1024u
 
-#define CAMERA_FAST 0.250f
-#define CAMERA_SLOW 0.025f
+#define CAMERA_SPEED 0.250f
 
-CameraControls camera(glm::vec3(0.0f, 0.5f, 1.0f), glm::vec3(0.0f), CAMERA_FAST);
+CameraControls camera(glm::vec3(0.0f, 0.5f, 1.0f), glm::vec3(0.0f), CAMERA_SPEED);
 unsigned int POVselected = 0; // will keep track of how many times the user has requested a POV switch
-bool fineMovement = false;
 bool debugView = false;
 bool timeStep = true;
 bool drawShadows = true;
@@ -131,7 +128,7 @@ void load_textures() {
         }
     }, 0);
 
-    texture_grass_diffuse.load(textures_path + "grass_diff.jpg", TEXTURE_GRASS);
+    texture_grass_diffuse.load(textures_path + "grass2.jpg", TEXTURE_GRASS);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);  // enable mipmap for minification
     texture_track_diffuse.load(textures_path + "road_diff.jpg", TEXTURE_ROAD);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
@@ -214,17 +211,10 @@ void processInput(GLFWwindow* window, terrain t) {
     }
 }
 
-Stopwatch pause;
-unsigned int pauseLength = 0;
+
 void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
     if (action == GLFW_PRESS && ((mods & GLFW_MOD_CONTROL) == 0)) {
         switch (key) {
-            // switch between fast and slow movement speed of the camera
-        case GLFW_KEY_E:
-            camera.setSpeed(fineMovement ? (CAMERA_FAST) : (CAMERA_SLOW));
-            fineMovement = !fineMovement;
-            break;
-
             // switch to the next point of view
         case GLFW_KEY_C:
             POVselected++;
@@ -232,17 +222,6 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 
         case GLFW_KEY_V:
             debugView = !debugView;
-            break;
-
-        case GLFW_KEY_T:
-            if (timeStep) {
-                timeStep = false;
-                pause.start();
-            }
-            else {
-                timeStep = true;
-                pauseLength = pause.end();
-            }
             break;
 
         case GLFW_KEY_L:
@@ -620,7 +599,7 @@ int main(int argc, char** argv) {
     lampT = lampTransform(r.t(), r.lamps(), scale, center);
     LampGroup lamps(lampLightPositions(lampT), LAMP_ANGLE_OUT, LAMP_SHADOWMAP_SIZE, TEXTURE_SHADOWMAP_LAMPS);
     unsigned int numActiveLamps = 3;
-    lamps.toggle(10);
+    lamps.toggle(2);
     lamps.toggle(11);
     lamps.toggle(14);
 
@@ -664,8 +643,7 @@ int main(int argc, char** argv) {
         check_gl_errors(__LINE__, __FILE__);
 
         if (timeStep) {
-            r.update(pauseLength);
-            pauseLength = 0;
+            r.update();
             lamps.setSunlightSwitch(r.sunlight_direction(), lamp_nighttime);
             headlights.setSunlightSwitch(r.sunlight_direction(), headlight_nighttime);
             daytime = isDaytime(r.sunlight_direction());
@@ -725,9 +703,17 @@ int main(int argc, char** argv) {
 
         // draw the screen buffer
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
-        glViewport(0, 0, width, height);
-        draw_scene(stack, false);
 
+        //draw main camera
+        glViewport(0, 0, width, height);
+        glm::mat4 mainViewMatrix = camera.matrix();
+        glUseProgram(shader_world.program);
+        glUniformMatrix4fv(shader_world["uView"], 1, GL_FALSE, &mainViewMatrix[0][0]);
+        glUniform1f(shader_world["uDrawShadows"], (drawShadows) ? (1.0) : (0.0));
+        glUniform1f(shader_world["uSunState"], (sunState) ? (1.0) : (0.0));
+        glUniform1f(shader_world["uLampState"], (lampState) ? (1.0) : (0.0));
+        glUniform1f(shader_world["uHeadlightState"], (headlightState) ? (1.0) : (0.0));
+        draw_scene(stack, false);
 
         if (debugView) {
             draw_frustum(sunProjector.lightMatrix(), COLOR_WHITE);
@@ -753,36 +739,25 @@ int main(int argc, char** argv) {
             }
         }
 
+        //Draw camera view on top left side
+        glViewport(0, height-300, 480, 300); 
+        int currentPOV = POVselected % r.cameramen().size();
+        glm::mat4 cameraViewMatrix; 
+        stack.push();
+        stack.mult(glm::translate(glm::mat4(1.f), glm::vec3(0.f, 1.f, 0.f))); // we bump the cameraman's POV upwards a little bit
+        // the cameraman's view matrix is the inverse of its frame, but first we scale it back up so that the projection matrix isn't affected
+        cameraViewMatrix = glm::inverse(glm::scale(stack.m() * r.cameramen()[currentPOV].frame, glm::vec3(1.f / scale)));
+        draw_cameraman[currentPOV] = false;
+        draw_cameraman[(currentPOV - 1) % r.cameramen().size()] = true;
+        stack.pop();
+        glUseProgram(shader_world.program);
+        glUniformMatrix4fv(shader_world["uView"], 1, GL_FALSE, &cameraViewMatrix[0][0]);
+        draw_scene(stack, false); 
+
 
         // update camera view according to incoming input
         updateDelta();
         processInput(window, r.ter());
-
-        glm::mat4 viewMatrix;
-        int currentPOV = POVselected % (1 + r.cameramen().size());
-        if (currentPOV == 0) {
-            viewMatrix = camera.matrix();
-            draw_cameraman[r.cameramen().size() - 1] = true;
-        }
-        else {
-            stack.push();
-            stack.mult(glm::translate(glm::mat4(1.f), glm::vec3(0.f, 1.f, 0.f))); // we bump the cameraman's POV upwards a little bit
-            // the cameraman's view matrix is the inverse of its frame, but first we scale it back up so that the projection matrix isn't affected
-            viewMatrix = glm::inverse(glm::scale(stack.m() * r.cameramen()[currentPOV - 1].frame, glm::vec3(1.f / scale)));
-            draw_cameraman[currentPOV - 1] = false;
-            if (currentPOV > 1)
-                draw_cameraman[currentPOV - 2] = true;
-            stack.pop();
-        }
-
-        glUseProgram(shader_world.program);
-        glUniformMatrix4fv(shader_world["uView"], 1, GL_FALSE, &viewMatrix[0][0]);
-        glUniform1f(shader_world["uDrawShadows"], (drawShadows) ? (1.0) : (0.0));
-        glUniform1f(shader_world["uSunState"], (sunState) ? (1.0) : (0.0));
-        glUniform1f(shader_world["uLampState"], (lampState) ? (1.0) : (0.0));
-        glUniform1f(shader_world["uHeadlightState"], (headlightState) ? (1.0) : (0.0));
-        glUseProgram(shader_basic.program);
-        glUniformMatrix4fv(shader_basic["uView"], 1, GL_FALSE, &viewMatrix[0][0]);
 
         glfwSwapBuffers(window);
         glfwPollEvents();

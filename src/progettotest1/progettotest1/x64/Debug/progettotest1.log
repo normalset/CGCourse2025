@@ -116,20 +116,20 @@ D:\uni\CGCourse2025\src\progettotest1\projector.h(144,25): warning C4305: 'inizi
 D:\uni\CGCourse2025\src\progettotest1\lamps.h(59,31): warning C4267: '=': conversione da 'size_t' a 'unsigned int'. Possibile perdita di dati.
   (compilazione del file di origine 'progettotest1.cpp')
   
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(76,22): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(77,27): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(98,23): warning C4305: 'inizializzazione': troncamento da 'double' a 'float'
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(190,24): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(323,26): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(323,21): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(644,30): warning C4838: la conversione da 'unsigned __int64' a 'int' richiede una conversione che supporta un minor numero di dati
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(644,30): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(645,49): warning C4838: la conversione da 'unsigned __int64' a 'int' richiede una conversione che supporta un minor numero di dati
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(645,49): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(780,52): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(781,49): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(782,50): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
-D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(783,55): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(75,22): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(76,27): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(95,23): warning C4305: 'inizializzazione': troncamento da 'double' a 'float'
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(187,24): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(302,26): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(302,21): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(623,30): warning C4838: la conversione da 'unsigned __int64' a 'int' richiede una conversione che supporta un minor numero di dati
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(623,30): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(624,49): warning C4838: la conversione da 'unsigned __int64' a 'int' richiede una conversione che supporta un minor numero di dati
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(624,49): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(712,52): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(713,49): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(714,50): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
+D:\uni\CGCourse2025\src\progettotest1\progettotest1.cpp(715,55): warning C4244: 'argomento': conversione da 'double' a 'GLfloat'. Possibile perdita di dati.
 D:\uni\CGCourse2025\3rdparty\glm\include\glm\detail\type_vec3.inl(292,108): warning C4244: 'argomento': conversione da 'U' a 'T'. Possibile perdita di dati.
 D:\uni\CGCourse2025\3rdparty\glm\include\glm\detail\type_vec3.inl(292,108): warning C4244:         with
 D:\uni\CGCourse2025\3rdparty\glm\include\glm\detail\type_vec3.inl(292,108): warning C4244:         [
@@ -154,9 +154,9 @@ D:\uni\CGCourse2025\3rdparty\glm\include\glm\detail\type_vec3.inl(292,108): warn
   
 D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<float>': non tutti i percorsi di controllo restituiscono un valore
 D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<unsigned int>': non tutti i percorsi di controllo restituiscono un valore
-D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<unsigned char>': non tutti i percorsi di controllo restituiscono un valore
-D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<unsigned short>': non tutti i percorsi di controllo restituiscono un valore
 D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<char>': non tutti i percorsi di controllo restituiscono un valore
+D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<unsigned short>': non tutti i percorsi di controllo restituiscono un valore
+D:\uni\CGCourse2025\src\progettotest1\common\renderable.h(128,1): warning C4715: 'renderable::type_to_GL<unsigned char>': non tutti i percorsi di controllo restituiscono un valore
   progettotest1.vcxproj -> D:\uni\CGCourse2025\src\progettotest1\x64\Debug\progettotest1.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
