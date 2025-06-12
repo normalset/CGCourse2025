@@ -152,12 +152,11 @@ void load_models() {
     std::cout << "model_car loaded: " << model_tree.size() << " renderables" << std::endl;
 }
 
-shader shader_basic, shader_world, shader_depth, shader_fsq;
+shader shader_basic, shader_world, shader_depth;
 void load_shaders() {
     shader_basic.create_program((shaders_path + "basic.vert").c_str(), (shaders_path + "basic.frag").c_str());
     shader_world.create_program((shaders_path + "world.vert").c_str(), (shaders_path + "world.frag").c_str());
     shader_depth.create_program((shaders_path + "depth.vert").c_str(), (shaders_path + "depth.frag").c_str());
-    shader_fsq.create_program((shaders_path + "fsq.vert").c_str(), (shaders_path + "fsq.frag").c_str());
 }
 
 // the passed shader MUST be already active!
@@ -231,7 +230,7 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
             lampUserState = !lampUserState;
             break;
 
-        case GLFW_KEY_K:
+        case GLFW_KEY_O:
             sunState = !sunState;
             break;
 
@@ -239,7 +238,7 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
             headlightUserState = !headlightUserState;
             break;
 
-        case GLFW_KEY_Q:
+        case GLFW_KEY_I:
             drawShadows = !drawShadows;
             break;
         }
@@ -416,23 +415,6 @@ void draw_trees(shader sh, matrix_stack stack) {
     glUseProgram(0);
 }
 
-renderable r_quad;
-void draw_texture(GLint tex_id, unsigned int texture_slot) {
-    GLint at;
-    glGetIntegerv(GL_ACTIVE_TEXTURE, &at);
-    glUseProgram(shader_fsq.program);
-
-    glActiveTexture(GL_TEXTURE0 + texture_slot);
-    glBindTexture(GL_TEXTURE_2D, tex_id);
-    glUniform1i(shader_fsq["uTexture"], texture_slot);
-    r_quad.bind();
-    glDisable(GL_CULL_FACE);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-    glUseProgram(0);
-    glActiveTexture(at);
-}
-
 renderable r_cube;
 // draws the frustum represented by the given projection matrix
 void draw_frustum(glm::mat4 projMatrix, glm::vec3 color) {
@@ -546,7 +528,7 @@ int main(int argc, char** argv) {
     // setup world
     fram = shape_maker::frame();
     r_sphere = shape_maker::sphere(2);
-    r_quad = shape_maker::quad();
+    
 
     shape s_cube;
     shape_maker::cube(s_cube);
